@@ -23,7 +23,7 @@ export class MenuPage implements OnInit {
   path: '/menu/register'
   },
   {
-  name: 'Songlist',
+  name: 'Service',
   path: '/menu/songlist'
   }
   ];
