@@ -7,9 +7,10 @@
   </ion-toolbar>
   </ion-header>
   <ion-content>
+    <ion-img :src="assets/pp.png"></ion-img>
   <ion-list>
   <ion-menu-toggle auto-hide="false" *ngFor="let page of pages">
-  <ion-item [routerLink]="page.path" routerDirection="root" [class.activemenu]="activePath === page.path">
+  <ion-item [routerLink]="page.path" routerDirection="root" color="primary" [class.activemenu]="activePath === page.path">
   {{page.name}}
   </ion-item>
   </ion-menu-toggle>
