@@ -1,0 +1,23 @@
+<!--Show the side menu on Login page -->
+<ion-header>
+  <ion-toolbar>
+  <ion-title>Worksites page</ion-title>
+  <ion-buttons slot="start">
+  <ion-menu-button autoHide="false"></ion-menu-button>
+  </ion-buttons>
+  </ion-toolbar>
+ </ion-header>
+ <ion-content>
+  <ion-label>Select Worksite</ion-label>
+  <ion-item>
+    
+    <ion-select value="helsinki" okText="Okay" cancelText="Dismiss">
+      <ion-select-option value="helsinki">Helsinki</ion-select-option>
+      <ion-select-option value="vantaa">Vantaa</ion-select-option>
+      <ion-select-option value="espoo">Espoo</ion-select-option>
+      <ion-select-option value="tampere">Tampere</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-text>Or</ion-text>
+  <ion-searchbar showCancelButton="focus"></ion-searchbar>
+ </ion-content>

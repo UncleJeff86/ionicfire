@@ -28,6 +28,14 @@ const routes: Routes = [
   {
   path: 'songlist',
   loadChildren: '../songlist/songlist.module#SonglistPageModule'
+  },
+  {
+  path: 'service',
+  loadChildren: '../service/service.module#ServicePageModule'
+  },
+  {
+  path: 'worksites',
+  loadChildren: '../worksites/worksites.module#WorksitesPageModule'
   }
   ]
   },

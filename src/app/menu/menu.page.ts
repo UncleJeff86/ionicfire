@@ -11,10 +11,6 @@ export class MenuPage implements OnInit {
   activePath = '';
   pages = [
   {
-  name: 'Home',
-  path: '/menu/home'
-  },
-  {
   name: 'Login',
   path: '/menu/login'
   },
@@ -23,8 +19,20 @@ export class MenuPage implements OnInit {
   path: '/menu/register'
   },
   {
-  name: 'Service',
+  name: 'Home',
+  path: '/menu/home'
+  },
+  {
+  name: 'Logistics',
   path: '/menu/songlist'
+  },
+  {
+  name: 'Service',
+  path: '/menu/service'
+  },
+  {
+  name: 'Worksites',
+  path: '/menu/worksites'
   }
   ];
   constructor(private router: Router) {
