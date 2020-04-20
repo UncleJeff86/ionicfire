@@ -7,8 +7,14 @@
   </ion-buttons>
   </ion-toolbar>
  </ion-header>
- <ion-content>
-  <ion-label>Select Worksite</ion-label>
+
+
+
+ <ion-content [fullscreen]="true" class="site-search">
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-label>Select Worksite</ion-label>
   <ion-item>
     
     <ion-select value="helsinki" okText="Okay" cancelText="Dismiss">
@@ -18,6 +24,9 @@
       <ion-select-option value="tampere">Tampere</ion-select-option>
     </ion-select>
   </ion-item>
-  <ion-text>Or</ion-text>
-  <ion-searchbar showCancelButton="focus"></ion-searchbar>
- </ion-content>
+        <span class="divider line one-line">or</span>
+        <ion-searchbar showCancelButton="focus"></ion-searchbar>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
